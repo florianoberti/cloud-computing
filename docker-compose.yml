@@ -1,0 +1,33 @@
+version: '3'
+services:
+    web:
+        image: nginx:latest
+        ports:
+            - "8080:80"
+        volumes:
+            - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
+            - ./public:/Cloud_Computing_Project/public
+        depends_on:
+            - mysql
+        restart: always
+    php:
+        build:
+            context: .
+            dockerfile: PHP.Dockerfile
+        volumes:
+            - ./public:/Cloud_Computing_Project/public
+        restart: always
+    mysql:
+        image: mariadb:latest
+        environment:
+            MYSQL_ROOT_PASSWORD: 'password'
+            MYSQL_USER: 'abhinav'
+            MYSQL_PASSWORD: 'password'
+            MYSQL_DATABASE: 'site1'
+        volumes:
+            - Cloud_Computing_Project:/var/lib/mysql
+        ports:
+            - 3307:3307
+        restart: always
+volumes:
+    Cloud_Computing_Project: {}
