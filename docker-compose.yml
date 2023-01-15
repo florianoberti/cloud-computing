@@ -20,9 +20,9 @@ services:
     mysql:
         image: mariadb:latest
         environment:
-            MYSQL_ROOT_PASSWORD: 'password'
-            MYSQL_USER: 'abhinav'
-            MYSQL_PASSWORD: 'password'
+            MYSQL_ROOT_PASSWORD: 'root'
+            MYSQL_USER: 'root'
+            MYSQL_PASSWORD: 'root'
             MYSQL_DATABASE: 'site1'
         volumes:
             - Cloud_Computing_Project:/var/lib/mysql
