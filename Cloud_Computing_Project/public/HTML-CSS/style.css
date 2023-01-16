@@ -1,0 +1,265 @@
+
+
+body {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	display : table;
+	width :100%;
+	background-color :#813737;
+	
+  }
+
+  header{
+	  
+	  padding-top: 0px;
+	  padding-bottom:10px;
+	  font-size: 1.05vw;
+	  color: white;
+  }
+  
+  .img_site img{
+	  position: absolute;
+	  top:0;
+	  left:0;
+	  width:7vw;
+	  height:auto;
+  }
+  
+  a{
+	  text-decoration: none;
+	  color: white;
+  }
+  .centre_gauche{
+	  
+	  width : 10%;
+	  float: left;
+	  display:inline;
+	  
+	  color:#c00000;
+	  font-size: 1vw;
+	  
+	  
+	  
+  }
+  .regroupement_centre {
+	  background-color:#a35555;
+	  width:100%;
+	  min-height : 32vw;
+	  overflow: auto;
+	  
+	  
+  } 
+  .centre_gauche p{
+	  text-decoration: none;
+	  color: white;}
+  
+  .centre{
+	  min-height:32vw;
+	  width: 90%;
+	  float: left;
+	  display:inline;
+	  background-color: rgb(231, 227, 227);
+	  text-align:center;
+	  color:black;
+	  
+  }
+  .centre_{
+	min-height:32vw;
+	width: 90%;
+	float: left;
+	background-color: rgb(231, 227, 227);
+	color:black;
+	
+  }
+  
+  .liste_produit td {
+	  background-color: rgb(231, 227, 227);
+	  border-radius: 1vw;
+	  border: solid 0.2vw;
+	  
+  }
+  .liste_produit .td_{
+	  background-color: rgb(231, 227, 227);
+	  border: solid 0px;
+  }
+  .zoom{
+	  width:7vw;
+	  height :auto;
+	  margin-left:30px;
+  }
+  
+  .image img {
+	  width: 100%;
+	  height: 100%;
+	  -webkit-transition: all 1s ease; /* Safari et Chrome */
+	  -moz-transition: all 1s ease; /* Firefox */
+	  -ms-transition: all 1s ease; /* Internet Explorer 9 */
+	  -o-transition: all 1s ease; /* Opera */
+	  transition: all 1s ease;
+  }
+  .image:hover img {
+	  -webkit-transform:scale(1.50); /* Safari et Chrome */
+	  -moz-transform:scale(1.50); /* Firefox */
+	  -ms-transform:scale(1.50); /* Internet Explorer 9 */
+	  -o-transform:scale(1.50); /* Opera */
+	  transform:scale(1.50);
+  }
+  
+  .img_suppr img{
+	height: 5vw;
+	width: auto;
+
+  }
+  .img_suppr img:hover{
+	cursor: pointer;
+  }
+  
+  footer{
+	  background-color:#813737 ;
+	  color: white ;
+	  display:table-row;
+	  width:100%; 
+	  text-align:center; 
+	  bottom :0;
+	  font-size: 1vw;
+  }
+  .centre_insc{
+	  width: 100%;
+	  text-align: center;
+	  
+  }
+  .centre_conn{
+	  width: 100%;
+	  text-align: left;
+	  margin-left: -3%;
+  }
+  table{
+	  margin-top:50px;
+	  font-size: 1vw;
+	  
+  }
+  .haut{
+	  
+	  width : 90%;
+	  text-align: center;
+	  float: left;
+  }
+  .menu1{
+	  font-size: 1.15vw;
+	  padding-left:5vw;
+  }
+  .menu1 ul{
+	
+	  padding: 0px;
+	  margin: 0px;
+	  display:flex;
+	  list-style-type: none; 
+	  
+	  
+  }
+  .menu1 li{
+	  display:flex;
+	  display: inline-block;
+	  padding: 0px;
+	  margin: 0px;
+	  width: 15%;
+	  height: 2.5vw;
+	  cursor: pointer;
+	  line-height: 40px;
+	  opacity:0.5;
+	  background: #fff;
+	  border-radius: 20px 0px 20px 0px;
+  }
+  .menu1 li a{
+	  margin: 0px;
+	  padding: 0px;
+	  text-decoration: none;
+	  color:black;
+  }
+  .menu1 li:hover{
+	  background-color:#C3D4D9;
+	  
+  }
+  .menu2{
+	  position: absolute;
+	  top:0;
+	  right:0;
+	  
+	  width:10%;
+	  text-align:center;
+	  font-size: 1.05vw;
+  }
+  .menu2 ul{
+	 
+	  padding: 0px;
+	  margin: 0px;
+	  
+	  
+	  display:flex;
+	  list-style-type: none; 
+	  
+	  
+  }
+  .menu2 li{
+	  display:flex;
+	  cursor:pointer;
+	  padding: 0px;
+	  margin: 0px;
+	  border-radius: 20px;
+	  height: 2.5vw;
+	  width :100%;
+	  text-align:center;
+	  line-height: 40px;
+	  opacity:0.5;
+	  background-color: #fff;
+  }
+  .menu2 li a{
+	  margin: 0px;
+	  padding: 0px;
+	  text-decoration: none;
+	  color:black;
+  }
+  .menu2 li:hover{
+	  background-color:#C3D4D9;
+  }
+  
+  
+  .commande{
+	  
+	  text-align:center;
+	  width:1vw;
+	  margin:0.2vw;
+  
+  }
+  .commande1{
+	  cursor: pointer;
+	  width: 100%;
+  }
+  .plus, .moins{
+	  border-radius: 50%;
+	  width: 2vw;
+	  height: 2vw;
+	  cursor: pointer;
+	  
+  }
+#nom_, #prenom_,#date_,#email_,#genre_,#fonction_{
+	color:red;
+}
+.tabcenter{
+	width:80%;
+	margin-left: 20%;
+	background-color: rgb(231, 227, 227);
+}
+.col1{
+	
+	width : 20%;
+}
+.col2{
+	
+	width : 20%;
+}
+.col3{
+	
+	width : 60%;
+}
