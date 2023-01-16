@@ -11,3 +11,4 @@ The only thing to do is to clone this repository with the command git clone (myp
 warning : if you have an 404 error or other types of error just add this line to the following directory: 
 
 127.0.0.1 SportMarket into etc/hosts
+or you can just rename the server_name line in the nginx.conf to localhost and so you don"t have to do any changes in your etc/hosts file
